@@ -9,7 +9,8 @@
       "methods": [
         "get",
         "post"
-      ]
+      ],
+      "route": "{userId}/negotiate"
     },
     {
       "type": "http",
@@ -21,7 +22,7 @@
       "direction": "in",
       "name": "connectionInfo",
       "hubName": "chat",
-      "userId": "{headers.x-ms-client-principal-name}"
+      "userId": "{userId}"
     }
   ]
 }
